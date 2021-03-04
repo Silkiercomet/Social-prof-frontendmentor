@@ -12,14 +12,16 @@ body{
     margin: 2rem;
     padding: 2rem;
     background: url(images/bg-pattern-top-desktop.svg),url(images/bg-pattern-bottom-desktop.svg);
-    background-position: top,bottom;
+    background-position: left top, right bottom;
     background-repeat: no-repeat;
 }
 .wrapper-header{
     display: flex;
     flex-direction: row;
 }
-
+.header{
+    max-width: 50%;
+}
 .header-main{
     font-size: 4rem;
     margin-bottom: 0;
@@ -33,11 +35,14 @@ body{
     display: flex;
     background-color: hsl(300, 24%, 96%);
     color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px ;
     margin: 10px ;
-    width: 80%; 
+    width: 80%;
+    
 }
-.card, .card1 {
+.card{
     background-color:hsl(300, 43%, 22%);
     color: #fff;
     border-radius: 0.6rem;
@@ -103,10 +108,10 @@ display: flex;
 }
 
 @media (max-width:868px){
-    .body{
+    body{
         background: url(images/bg-pattern-top-mobile.svg),url(images/bg-pattern-bottom-mobile.svg);
-        background-position: left top,bottom;
-        background-repeat: no-repeat,no-repeat;
+        background-position: top,bottom;
+        background-repeat: no-repeat;
     }
     .wrapper-header{
         flex-direction: column;
