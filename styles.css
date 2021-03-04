@@ -32,9 +32,10 @@ body{
     color: hsl(303, 10%, 53%);
 }
 .card1{
+    font-weight: 700;
     display: flex;
     background-color: hsl(300, 24%, 96%);
-    color: #333;
+    color: hsl(300, 43%, 22%);
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px ;
